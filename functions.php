@@ -108,3 +108,13 @@
 			wp_nav_menu(  $menu  );
 		}
 	}
+
+/**
+	@Thiết lập phân trang cho trang chủ
+	@cmg_menu(	$slug  )
+	**/
+	if( !function_exists('cmg_pagination') ){
+		function cmg_pagination(){
+
+		}
+	}
