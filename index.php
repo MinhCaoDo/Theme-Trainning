@@ -10,7 +10,7 @@
 			<?php endif; ?>
 	</section>
 	<section id="sidebar">
-		
+		<?php get_sidebar() ?>
 	</section>
 </div>
 <?php get_footer(); ?>
