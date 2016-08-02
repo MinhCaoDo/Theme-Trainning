@@ -258,3 +258,15 @@ if ( ! function_exists( 'cmg_entry_tag' ) ) {
     endif;
   }
 }
+
+
+/**
+	@ Chèn CSS và JS vào theme
+	@ Sử dụng hook wp_enqueue_scripts() để hiển thị nó ra ngoài front-end
+**/
+	
+	function cmg_styles(){
+		wp_register_style('main-style', get_template_directory_uri()."/style.css",'all');
+		wp_enqueue_style("main-style" );
+	}
+	add_action("wp_enqueue_scripts","cmg_styles" );

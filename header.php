@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href=""/>
 	<link rel="stylesheet" href="<?php bloginfo('pingback_url' ); ?>" />
 	<?php wp_head(); ?>
+	<?php do_action('wp_menubar','CMG'); ?>
 </head>
 <body <?php body_class(); ?>> 
 	<div id='container'>
